@@ -80,7 +80,6 @@ body {
  
 }
 .wanna-play button:hover {
-
   scale: 1.1;
   cursor: pointer;
  
@@ -100,40 +99,37 @@ body {
   width: 41px;
   height: 175px;
   margin: 2px;
+  padding-bottom: 8px;
   float: left;
   border-radius: 0 0 3px 3px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: #1d1e22;
+  user-select: none;
+
+  &.active {
+    background: #1d1e22;
+    color: #ffffff;
+  }
 }
 
 
-.black-key {
+.black {
   background-color: #1d1e22;
-  position: absolute;
   width: 32px;
   height: 100px;
   border-radius: 0 0 3px 3px;
   z-index: 3;
-}
+  margin: 0 -16px;
+  color: #ffffff;
 
-.bk1 {
-  left: 50px;
-}
-.bk2 {
-  left: 97px;
-}
-.bk3 {
-  left: 186px;
-}
-.bk4 {
-  left: 231px;
-}
-.bk5 {
-  right: 192px;
-}
-.bk6 {
-  right: 102px;
-}
-.bk7 {
-  right: 57px;
+  &.active {
+    background: #ffffff;
+    color: #1d1e22;
+  }
 }
 
 .shortcut-white {
@@ -144,105 +140,6 @@ body {
   font-size: 18px;
   font-weight: 600;
 }
-.sw1 {
-  left: 40px;
-}
-.sw2 {
-  left: 87px;
-
-}
-.sw3 {
-  left: 130px;
-}
-.sw4 {
-  left: 177px;
-
-}
-
-.sw5 {
-  left: 222px;
-}
-
-.sw6 {
-  right: 226px;
-}
-.sw7 {
-  right: 184px;
-}
-.sw8 {
-  right: 135px;
-}
-.sw9 {
-  right: 92px;
-}
-.sw10 {
-  right: 44px;
-}
-
-
-
-.shortcut-black {
-  position: absolute;
-  z-index: 4;
-  color: #fff ;
-  top: 130px;
-  font-size: 18px;
-  
-}
-.sb1 {
-  left: 60px;
-  color: #fff;
-}
-
-.sb2 {
-  left: 109px;
-}
-
-.sb3 {
-  left: 198px;
-}
-
-.sb4 {
-  left: 244px;
-}
-
-.sb5 {
-  right: 205px;
-}
-.sb6 {
-  right: 114px;
-}
-
-.sb7 {
-  right: 69px;
-}
-
-
-/*
-
-@media (max-width: 768px) {
-  #piano {
-    width: 355px;
-  }
-
-  .keys {
-    width: 318px;
-  }
-
-}
-
-
-@media (max-width: 1199px) and (min-width: 769px) {
-  #piano {
-    width: 355px;
-  }
-  .keys {
-    width: 319px;
-  }
-
-}
-
-*/
 
 @media only screen and (max-width: 600px) {
   .note-image {
